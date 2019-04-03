@@ -5,9 +5,9 @@ mkdir data
 
 for value in {1..100}
 do
-  randomno=$((RANDOM%3))
+  randomno=$((RANDOM%200))
   sleep $randomno
   runtime=`date +"%F-%T"`
-  echo "date, delay" > ./data/$runtime.csv
-  echo "$runtime, $randomno" >> ./data/$runtime.csv
+  echo "date,delay" > ./data/$runtime.csv
+  echo "$runtime,$randomno" >> ./data/$runtime.csv
 done
