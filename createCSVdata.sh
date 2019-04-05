@@ -10,4 +10,5 @@ do
   runtime=`date +"%F-%T"`
   echo "date,delay" > ./data/$runtime.csv
   echo "$runtime,$randomno" >> ./data/$runtime.csv
+	echo $value
 done
