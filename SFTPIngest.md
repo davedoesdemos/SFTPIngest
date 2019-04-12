@@ -95,6 +95,7 @@ Now we're all set to run the pipeline. Click Publish All to save everything read
 Click add trigger and choose new/edit. Next click New. Give the trigger a useful name so that you can identify the jobs created from it. Choose tumbling window as the trigger type and set the start time to something around the time you ran the crateCSVdata.sh script. Set the end time to the same plus an hour and the recurrence to 15 minutes. Remember that you'll be charged more for more runs so for demos be as specific as you can.
 ![23.Trigger.png](images/23.Trigger.png)
 Copy the following into the parameters boxes. This will fill the parameters with the timestamps needed to filter files based on the tumbling window. Click finish and then publish all.
+
 runstart
 
 `@trigger().outputs.windowStartTime`
