@@ -96,9 +96,9 @@ Click add trigger and choose new/edit. Next click New. Give the trigger a useful
 ![23.Trigger.png](images/23.Trigger.png)
 Copy the following into the parameters boxes. This will fill the parameters with the timestamps needed to filter files based on the tumbling window. Click finish and then publish all.
 runstart
-```@trigger().outputs.windowStartTime
+`@trigger().outputs.windowStartTime`
 runend
-```@trigger().outputs.windowEndTime
+`@trigger().outputs.windowEndTime`
 ![24.params.png](images/24.params.png)
 Now you should see several runs under the monitor tab. 
 ![25.PipelineRuns.png](images/25.PipelineRuns.png)
