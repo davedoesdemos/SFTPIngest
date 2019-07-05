@@ -86,7 +86,7 @@
       "location": "[resourceGroup().location]",
       "name": "SFTP01_NIC",
       "dependsOn": [
-        "[resourceId('Microsoft.Network/publicIPAddresses','ir01_IP')]",
+        "[resourceId('Microsoft.Network/publicIPAddresses','SFTP01_IP')]",
         "[resourceId('Microsoft.Network/virtualNetworks','vnet01')]",
         "[resourceId('Microsoft.Network/networkSecurityGroups','nsg01')]"
       ],
@@ -100,7 +100,7 @@
             "properties": {
               "privateIPAllocationMethod": "Dynamic",
               "publicIPAddress": {
-                "id": "[resourceId('Microsoft.Network/publicIPAddresses', 'ir01_IP')]"
+                "id": "[resourceId('Microsoft.Network/publicIPAddresses', 'SFTP01_IP')]"
               },
               "subnet": {
                 "id": "[resourceId('Microsoft.Network/virtualNetworks/subnets', 'vnet01', 'subnet01')]"
