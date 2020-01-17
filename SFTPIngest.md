@@ -4,6 +4,8 @@
 # Introduction
 This demo shows how to ingest data from an SFTP source to your Azure Data Lake. This can be useful when third parties share data with you via SFTP rather than giving access to the source systems. You could also use a Logic App with a new file trigger to copy the files into blob storage if you prefer.
 
+Video available [here](https://youtu.be/hjKPxK3hNT4)
+
 Deploy the infrastructure required for this workshop by clicking the button below:
 
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fdavedoesdemos%2FSFTPIngest%2Fmaster%2FDeploy%2Fazuredeploy.json" target="_blank">
